@@ -1,0 +1,1 @@
+{"PublicFields": ["Name", "LastName"], "PrivateFields": ["Password", "Age", "Surname"]}

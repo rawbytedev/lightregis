@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h2>Register</h2>
+        <form method="post" action="/register">
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Username" required>
+            <label for="passw">Password: </label>
+            <input type="password" name="passw" placeholder="Password" required>
+            <label for="FirstName">First Name:</label>
+            <input type="text" name="FirstName" placeholder="FirstName" required>
+            <label for="LastName">Last Name:</label>
+            <input type="text" name="LastName" placeholder="LastName" required>
+            <label for="group">Group</label>
+            <input type="text" name="group" placeholder="group" required>
+            <button type="submit">register</button>
+        </form>
+        <h2>login</h2>
+        <form method="post" action="/login">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Username" required>
+            <label for="passw">password</label>
+            <input type="password" name="passw" placeholder="Password" required>
+            <button type="submit">login</button>
+        </form>
+    </body>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h2>Welcome {{ username }}</h2>
+        <table>
+            <tr><th>Groups</th><th>Join</th></tr>
+            {% for gname in groups %}
+            <tr>
+                <td>{{ gname }}</td>
+                <td></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <form action="/logout">
+            <button type="submit">Logout</button>
+        </form>
+    </body>
